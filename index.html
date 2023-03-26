@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <form onsubmit="" class="login-form">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" />
+        <input type="password" placeholder="Password" />
+        <p>Captcha</p>
+        <div class="captcha-container">
+          <div id="captchaBackground">
+            <span id="captcha">captcha text</span>
+          </div>
+          <input
+            id="textBox"
+            type="text"
+            name="text"
+            placeholder="Enter captcha"
+          />
+        </div>
+        <div id="buttons">
+          <input id="submit" type="submit" />
+          <button id="refresh" type="submit">Refresh</button>
+        </div>
+      </form>
+      <span id="output"></span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
